@@ -1,0 +1,82 @@
+<!--Užduotis: EventListeners ir dinamiška DOM manipuliacija
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #status {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<p id="text">Some initial text</p>
+	<div id="parentDiv">
+	    <p id="childText">Child text</p>
+	</div>
+	<div id="box"></div>
+	<button id="actionButton">Click me</button>
+	<p id="status">Incomplete</p>
+	<script src="scripts.js"></script>
+</body>
+</html>
+3.1 Tikslas: Naudodami aukščiau esantį HTML dokumentą, sukurkite tinklapį, kuriame mygtuko paspaudimu dinamiškai pakeisite elementų reikšmes ir išvaizdą.
+
+Nuspaudus mygtuką:
+Pakeiskite <p id="text"> tekstinį turinį į "Tekstas pasikeitė!".
+Sukeiskite <div id="parentDiv"> viduje esantį <p id="childText"> elementą su nauju, jūsų sukurtu <span id="newChild"> elementu.
+Pakeiskite <div id="box"> elemento spalvą į žalią.
+Įvertinkite ar išvardinti reikalavimai buvo išpildyti naudodami if...else kontrolės sakinius.
+Jeigu reikalavimai išpildyti - <p id="status">Incomplete</p> tekstą pakeiskite į "Complete" ir nuspalvinkite jį žalia spalva.
+Nesekmės atveju, <p id="status">Incomplete</p> turėtų nepakisti, konsolėje turėtų atsirasti pranešimas, jog nepavyko įvykdyti operacijos.
+3.2 Instrukcijos:
+
+Apsibrėžkite reikiamus kintamuosius.
+Mygtuko kintamajam priskirkite EventListener su 'click' tipo Event.
+Atlikite teksto pakeitimą <p id="text"> tekstinio turinio pakeitimą pasinaudodami .innerText objektu.
+Atlikite <div id="parentDiv"> viduje esančio <p id="childText"> sukeitimą su <span id="newChild">, pasinaudodami .innerHtml objektu.
+Pakeiskite <div id="box"> spalvą į žalią pasinaudodami .style.backgroundColor objektu.
+Patikrinkite ar jūsų elementai buvo sėkmingai pakeisti pasinaudoję if...else logika, prisiminkite operatorius kaip ===, !== ir &&.
+Sėkmės atveju <p id="status">Incomplete</p> tekstą pakeiskite į "Complete" pasinaudodami .innerText objektu, bei spalvą pakeiskite į žalią pasitelkdami .style.color objektą.
+
+Nesėkmės atveju nieko nekeiskite, tačiau išspausdinkite į konsolę pranešimą, jog nepavyko atlikti operacijos.
+https://github.com/rokasandreikenas/web-javascript/commit/21115942d639f27308a7dc9f94c7c4e5557942ea#diff-c2ea192d23864432438559fda2c7b10a26a739cd94786fcaeb1978812c3d7dca
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #status {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<p id="text">Some initial text</p>
+	<div id="parentDiv">
+	    <p id="childText">Child text</p>
+	</div>
+	<div id="box"></div>
+	<button id="actionButton">Click me</button>
+	<p id="status">Incomplete</p>
+	<script src="scripts.js"></script>
+</body>
+</html>

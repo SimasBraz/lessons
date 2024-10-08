@@ -1,0 +1,42 @@
+<!--Praktinės užduotys
+Užduotis 1: Sukurkite perėjimą
+Sukurkite mygtuką su spalvos perėjimu, kai jis yra hover būsenos.
+Pakeiskite perėjimo trukmę į 0.5s.
+Atsakymas: https://github.com/rokasandreikenas/web-javascript/blob/main/11.%20interactions/transition.html
+
+Užduotis 2: Sukurkite animaciją
+Sukurkite div elementą su fono spalvos animacija, kuri keičiasi kas 2 sekundes.
+Pridėkite dar vieną keyframe, kuris keičia elementą iš raudonos į mėlyną spalvą per 4 sekundes.
+Atsakymas: https://github.com/rokasandreikenas/web-javascript/blob/main/11.%20interactions/animation.html
+
+Užduotis 3: Sukurkite mikrointerakciją
+Sukurkite mygtuką, kuris sumažėja (scale efektas) kai jį paspaudžia vartotojas.
+Pakeiskite transform savybę, kad mygtukas būtų animuotas su 0.2s trukme.
+Atsakymas: https://github.com/rokasandreikenas/web-javascript/blob/main/11.%20interactions/microinteraction.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spalvos Perėjimas</title>
+    <style>
+      .button {
+        padding: 10px 20px;
+        background-color: #ff6a3e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.5s ease;
+      }
+
+      .button:hover {
+        background-color: #ffba43;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Hover me</button>
+  </body>
+</html>
