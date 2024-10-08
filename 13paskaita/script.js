@@ -148,3 +148,4 @@ if (PersonAge >= 18 &&  str === "Lithuanian" && DaysofLivingincountry > 30) {
 } else {
 	console.log("Person is not Lithuanian");
 }
+
