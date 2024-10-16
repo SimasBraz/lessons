@@ -1,0 +1,33 @@
+<!--Užduotis 3: Balsavimo tinkamumo nustatymas
+Tikslas: Peržvelgti objektų masyvą, kurie nurodo asmenis, patikrinti jų balsavimo tinkamumą ir atskirti juos į du naujus masyvus: vieną tiems, kurie gali balsuoti, ir kitą tiems, kurie negali balsuoti. Tada atspausdinkite vardus iš kiekvieno masyvo.
+
+Instrukcijos:
+Sukurkite 5 objektų masyvą, kiekvienas objektas turi turėti šiuos raktus name(string), age(number) ir validResidence(boolean).
+const people = [ 
+	{ name: 'Alice', age: 25, validResidence: true },
+	{ name: 'Bob', age: 17, validResidence: true },
+	{ name: 'Charlie', age: 30, validResidence: false },
+	{ name: 'John', age: 13, validResidence: true },
+	{ name: 'Amy', age: 24, validResidence: true }
+];
+Apsibrėžkite du naujus masyvus: canVote ir cantVote.
+const canVote = [];
+const cantVote = [];
+Sukurkite for ciklą, kuris iteruotų per asmenų masyvą.
+Ciklo viduje patikrinkite, ar asmuo gali balsuoti (amžius >= 18 ir validResidence yra true).
+Jei asmuo gali balsuoti, pridėkite objektą į canVote masyvą.
+Jei asmuo negali balsuoti, pridėkite objektą į cantVote masyvą.
+Sukurkite naują for ciklą, kad atspausdintų žmonių vardus iš canVote masyvo.
+Sukurkite kitą for ciklą, kad atspausdintų žmonių vardus iš cantVote masyvo.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scripts.js"></script>
+</body>
+</html>
